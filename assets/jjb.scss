@@ -3,7 +3,7 @@
 ---
 
 @import "bootstrap/bootstrap";
-@import "minima";
+
 @import "shared";
 
 $primary: #000;
@@ -14,12 +14,12 @@ $heading-colors: $primary;
   background: $primary !important;
 }
 h2 {
-  color:$primary;
+  color: $primary;
 }
 
 .iconmenu {
   .icon .fa {
-    color:$primary;
+    color: $primary;
   }
 }
 .mainmenu {
