@@ -1,0 +1,87 @@
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 text-center">
+                        <img src="./assets/images/logo-{{page.section}}.png" alt="Judo Club Agenais" class="logo">
+                    </div>
+                    <div class="col-lg-6 col-md-8 m-md-auto">
+                        <ul class="nav menu mainmenu">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link {% if page.layout == 'home' %} active {% endif %}">Judo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {% if page.layout == 'jjb' %} active {% endif %}" href="jjb">Jiu
+                                    Jitsu Brésilien</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mma" class="nav-link {% if page.layout == 'mma' %} active {% endif %}">Arts
+                                    Martiaux Mixtes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <ul class="nav menu iconmenu">
+                        <li class="icon social-media nav-item">
+                            <a href="{{page.facebook}}" >
+                            <i class="fa fa-facebook-official" aria-label="facebook"></i>
+                            </a>
+                        </li>
+                        {% if page.instagram ? %}
+                        <li class="icon social-media nav-item">
+                            <a href="{{page.instagram}}">
+                            <i class="fa fa-instagram" aria-label="instagram"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if page.section == "judo" %}
+    <div class="submenu bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav menu float-md-right sectionmenu">
+                        <!-- <li class="nav-item"><a href="#rentree-tarif" class="nav-link ">Rentrée & Tarifs</a>
+                        </li> -->
+                        
+
+                        <li class="nav-item"><a href="#actualites" class="nav-link ">Actualités</a>
+                        </li>
+                        <!-- <li class="nav-item"><a href="#planning" class="nav-link ">Planning</a></li> -->
+                        <li class="nav-item"><a href="#contact" class="nav-link ">Contact</a></li>
+                        <li class="nav-item"><a href="#plan-lieu" class="nav-link ">Plan & Lieu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.section == "jjb" %}
+    <div class="submenu bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav menu float-md-right sectionmenu">
+                        <!-- <li class="nav-item"><a href="#rentree-tarif" class="nav-link ">Rentrée & Tarifs</a>
+                        </li> -->
+                        <!-- <li class="nav-item"><a href="#planning" class="nav-link ">Planning</a></li> -->
+                        <li class="nav-item"><a href="#actualites" class="nav-link ">Édito</a>
+                        <li class="nav-item"><a href="#tarifs" class="nav-link ">Tarifs</a>
+                        <li class="nav-item"><a href="#planning" class="nav-link ">Planning</a></li>
+                        </li>
+                        <li class="nav-item"><a href="#contact" class="nav-link ">Contact</a></li>
+                        <li class="nav-item"><a href="#plan-lieu" class="nav-link ">Plan & Lieu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>

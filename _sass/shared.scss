@@ -1,0 +1,120 @@
+.btn-primary:visited {
+  color: $white;
+}
+.header {
+  position  : fixed;
+  top       : 0;
+  left      : 0;
+  width     : 100%;
+  background: $white;
+  z-index   : 999;
+
+  .logo {
+    position           : absolute;
+    width              : 130px;
+    height             : 130px;
+    background-position: center center;
+  }
+  @include media-breakpoint-down(md) {
+    position:initial;
+    .logo {
+      position:initial;
+    }
+  }
+}
+.iconmenu {
+  justify-content:center;
+  align-items:center;
+  height:100%;
+  .icon {
+    padding-left:10px;
+  }
+  .icon .fa{
+    color:$primary;
+    font-size:32px;
+    &:hover {
+      color:$dark;
+    }
+    
+  }
+}
+
+.mainmenu {
+  .nav-link {
+    color: $dark;
+    &:hover {
+      background: $gray-200;
+    }
+    &.active {
+      background: $primary;
+      color     : $white;
+    }
+  }
+}
+.sectionmenu {
+  .nav-link {
+    color: $white;
+    &:hover {
+      background: $dark;
+      color     : $white;
+    }
+  }
+}
+
+body > .content {
+  padding-top: 80px;
+
+  .module {
+    padding: map-get($map: $spacers, $key: 2);
+    margin : map-get($map: $spacers, $key: 4);
+  }
+  .pre-contenu {
+    background: $gray-200 url("../assets/images/slider_1.jpg") center center
+      no-repeat;
+    background-size: cover;
+    min-height     : 640px;
+    padding-top    : map-get($map: $spacers, $key: 2);
+    padding-bottom : map-get($map: $spacers, $key: 2);
+    display        : flex;
+    align-items    : center;
+    .module {
+      background   : rgba($white, 0.8);
+      border-radius: $border-radius;
+      border       : 1px solid $white;
+    }
+  }
+  .post-contenu {
+    background    : $primary;
+    color         : $white;
+    padding-bottom: map-get($map: $spacers, $key: 4);
+    h2,
+    a {
+      color: $white;
+    }
+    a {
+      text-decoration: underline;
+      &:hover {
+        background: $black;
+      }
+    }
+    .card {
+      border-color: $white;
+      background  : $primary;
+      .card-title {
+        font-weight: 700;
+      }
+      .list-group-item {
+        background: $primary;
+      }
+    }
+    .cp_town,.rue {
+      padding-left: 20px;
+    }
+    .carte {
+      padding-top: 20px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding:0;
+  }
+}

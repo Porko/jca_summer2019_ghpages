@@ -1,0 +1,64 @@
+---
+#
+---
+
+@import "bootstrap/bootstrap";
+@import "minima";
+@import "shared";
+
+$primary: #000;
+
+$heading-colors: $primary;
+
+.bg-primary {
+  background: $primary !important;
+}
+h2 {
+  color:$primary;
+}
+
+.iconmenu {
+  .icon .fa {
+    color:$primary;
+  }
+}
+.mainmenu {
+  .nav-link {
+    &.active {
+      background: $primary;
+    }
+  }
+}
+body > .content {
+  .pre-contenu {
+    background: $gray-200 url("../assets/images/jjb_slider_1.jpg") center center
+      no-repeat;
+    .tarifs {
+      ul li {
+        list-style-type: none;
+        margin-top     : 5px;
+        &:last-child {
+          border-top: 1px solid $dark;
+        }
+        .label {
+          width  : 100px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .post-contenu {
+    a {
+      &:hover {
+        background: $dark;
+      }
+    }
+    background: $primary;
+    .card {
+      background: $primary;
+      .list-group-item {
+        background: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans&display=swap");
+
+/**
+ * COLORS
+ */
+$primary: #ec1d25 !default;
+
+$headings-color: $primary !default;
+
+/**
+ * BORDERS
+ */
+$border-radius: 10px;
+
+/**
+ * FONTS
+ */
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans",
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, "Nanum Gothic", Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+$headings-font-family: $font-family-monospace;
